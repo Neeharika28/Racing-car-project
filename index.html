@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Car Racing Game</title>
+        <srcipt src="main.js"></srcipt>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+h1{
+font-size: 45px;
+font-family:impact;
+color: aliceblue;
+}
+body{
+    text-align: center;
+    background-image: url("Bg Gif.gif");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas{
+border-style:ridge;
+border-width: 10px;
+}
+#note{
+    font-size: 25px;
+    color: white;
+}
+</style>
+
+    </head>
+
+    <body onload="add()">
+<h1>Car Racing<br>Game Status- <span id="game_status"></span></h1>
+<canvas width="800" height="600" id="myCanvas"></canvas>
+<br><br>
+<p id="note"><b class="text-danger">NOTE : </b>IF THE CARS ARE NOT VISIBLE REFRESH THE PAGE</p>
+<br>
+<br>
+    </body>
+
+</html>
