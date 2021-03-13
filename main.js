@@ -88,3 +88,101 @@ if(keyPressed==83){
 }
 
 }
+
+// Car1 Code
+
+function car1_up(){
+    if (car1_up>=0) {
+        car1_up-=10;
+        console.log("car1x: "+car1_x+"car1y: "+car1_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+
+function car1_down(){
+    if (car1_down<=500) {
+        car1_up+=10;
+        console.log("car1x: "+car1_x+"car1y: "+car1_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+
+function car1_left(){
+    if (car1_left>=0) {
+        car1_left-=10;
+        console.log("car1x: "+car1_x+"car1y: "+car1_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+
+function car1_right(){
+    if (car1_right<=500) {
+        car1_right+=10;
+        console.log("car1x: "+car1_x+"car1y: "+car1_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+
+// car2 code
+
+function car2_up(){
+    if (car2_up>=0) {
+        car2_up-=10;
+        console.log("car2x: "+car2_x+"car2y: "+car2_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+
+function car2_down(){
+    if (car2_down<=500) {
+        car2_up+=10;
+        console.log("car2x: "+car2_x+"car2y: "+car2_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+
+function car2_left(){
+    if (car2_left>=0) {
+        car2_left-=10;
+        console.log("car2x: "+car2_x+"car2y: "+car2_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+
+function car2_right(){
+    if (car2_right<=500) {
+        car2_right+=10;
+        console.log("car2x: "+car2_x+"car2y: "+car2_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+
+// Code for Checking if car1 won
+
+if (car1_x > 700) {
+    console.log("Car1 Won");
+    document.getElementById("game_status").innerHTML="Car 1 Won!!";
+}
+
+// Code checking for Car2 Won
+
+if (car2_x > 700) {
+    console.log("Car2 Won");
+    document.getElementById("game_status").innerHTML="Car 2 Won!!";
+}
